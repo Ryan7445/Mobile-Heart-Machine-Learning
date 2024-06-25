@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    tools:context=".SimulasiModelActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="69dp">
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/btnCheck"
+        app:layout_constraintStart_toStartOf="@id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@id/btnCheck" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/pink_border"
+
+        android:layout_marginTop="112dp"
+        android:ems="15"
+        android:hint="Age (18~80)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/pink_border"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="Sex (0~1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/cp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/pink_border"
+        android:ems="15"
+        android:hint="CP (0~3)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/trestbps"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="Trestbps (94~200)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/pink_border"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/chol"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="Chol (126~564)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/pink_border"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trestbps"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/fbs"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="Fbs (0~1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/pink_border"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chol"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/restecg"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="Restecg (0~2)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/pink_border"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbs"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/oldpeak"
+        android:background="@drawable/pink_border"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="Oldpeak (0~6.2)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restecg"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Predict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+       android:textColor="@color/brown"
+        app:layout_constraintTop_toBottomOf="@id/oldpeak"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

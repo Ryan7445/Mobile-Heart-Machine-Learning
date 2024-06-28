@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/gradien"
     tools:context=".DatasetActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/gradien"
         android:orientation="vertical"
         android:weightSum="10"
         app:layout_constraintBaseline_toBaselineOf="parent">
@@ -21,14 +21,14 @@
             android:layout_weight="2">
 
             <TextView
-                android:layout_width="500dp"
-                android:layout_height="100dp"
-                android:text="DATASET"
-                android:textStyle="bold"
-                android:textAlignment="center"
+                android:layout_width="349dp"
+                android:layout_height="80dp"
                 android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="30sp"/>
+                android:text="DATASET"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
@@ -44,16 +44,16 @@
             android:padding="15dp">
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/brown"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
+                android:layout_width="260dp"
+                android:layout_height="163dp"
                 android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
+                android:layout_columnWeight="1"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/brown"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -64,14 +64,15 @@
 
 
                     <TextView
-                        android:layout_width="298dp"
-                        android:layout_height="171dp"
+                        android:layout_width="322dp"
+                        android:layout_height="350dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="30dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="100dp"
-                        android:text="Dataset Heart Disease Cleveland UCI berisi data penyakit jantung yang dikumpulkan dari Cleveland Clinic Foundation. Dataset ini sering digunakan untuk analisis statistik dan pembelajaran mesin terkait prediksi penyakit jantung"
+                        android:text="Dataset Heart Disease Cleveland UCI berisi data penyakit jantung yang dikumpulkan dari Cleveland Clinic Foundation. Dataset ini sering digunakan untuk analisis statistik dan pembelajaran mesin terkait prediksi penyakit jantung. \n \n Author Cherng-Shiuh Cherng \n Jumlah data : 303 \n
+Jumlah fitur : 14 Kolom"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="18sp"
@@ -83,47 +84,9 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/brown"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
 
 
-                    <TextView
-                        android:layout_width="290dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="65dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="100dp"
-                        android:text="Author Cherng-Shiuh Cherng \n
-Jumlah data : 303 \n
-Jumlah fitur : 14 Kolom"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="19sp"
-                        android:textStyle="italic">
 
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
         </GridLayout>
 
